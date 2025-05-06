@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Messages</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">portfolio</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/education.html">Education</a>
+      <a href="/skills.html">Skills</a>
+      <a href="/experience.html">Work Experience</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/submit-message">Submit Messages</a> <!-- ✅ Correct route -->
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Submitted Messages</h1>
+    <div class="messages">
+      <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px;">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each messages}}
+          <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.message}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
+

@@ -1,0 +1,140 @@
+/* Ensure full height and width for the webpage */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #001f3f, #000428, #5e3f5e);
+  background-size: cover; /* Cover the entire viewport */
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 75%; /* Ensure body takes up full height */
+  width: 100%; /* Ensure body takes up full width */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navbar nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a.active,
+.navbar nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.content {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  min-height: 95%; /* Make sure content can expand to the full height */
+}
+
+/* Center the contact form and add a square-like box */
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background for form */
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px; /* Limit the width to make it more square-like */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.contact-form h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #f1f1f1;
+}
+
+.contact-form p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form label {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  background-color: #eee;
+  color: #333;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 85px;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #444;
+}
+
+/* Map Styling */
+#map {
+  height: 400px;
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
