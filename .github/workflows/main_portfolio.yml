@@ -9,7 +9,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-  permissions:
+    permissions:
       id-token: write      # ✅ REQUIRED for Azure OIDC login
       contents: read
     steps:
