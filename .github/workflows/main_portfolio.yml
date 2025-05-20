@@ -22,6 +22,7 @@ jobs:
           client-id: 66e2c080-70cb-45fa-b8cd-b95bc7104d97
           tenant-id: 298d77e5-a38c-4dfa-9203-24f85a6eabbb
           subscription-id: 1a4fc747-a4d7-4a7d-9276-264dc808ed8b
+          client-secret: 0HF8Q~nojfk5lHs58Co6pDKWcYqBWfdOfyag-bFa
           
       - name: Log in to Azure Container Registry (ACR)
         uses: azure/docker-login@v1
